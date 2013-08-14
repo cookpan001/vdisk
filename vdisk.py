@@ -8,9 +8,6 @@ import urllib
 import urllib2
 
 class OAuth2(object):
-    #app_key = 1849463086
-    #app_secret = "69cac315ddfacb7ec11628fe3aaa9511"
-    #call_back_url = "http://pzhu001.sinaapp.com/access_token"
     ACCESS_TOKEN_URL = "https://auth.sina.com.cn/oauth2/access_token"
     AUTHORIZE_URL = "https://auth.sina.com.cn/oauth2/authorize"
 
