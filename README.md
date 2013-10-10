@@ -17,7 +17,7 @@ In the callback url.
 ###
 
     oauth = OAuth2(WEIPAN_APPKEY,WEIPAN_APPSECRET,WEIPAN_CALLBACK)
-    #use web.py framework
+    #get request parameters using web.py framework
     i = web.input()
     if i.code.isdigit() and int(i.code) == 21330:
         return i.msg
