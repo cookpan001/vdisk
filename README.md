@@ -30,6 +30,13 @@ Request for data using access_token.
     obj = Client()
     return obj.account_info(access_token)
 ###
+All the responses will be a Response object(defined in vdisk.py).
+When download file using files(GET),developers should do this
+###
+
+    for content in Response.data():
+        #you can print content,or save content in a file.
+###
 <h3>Example</h3>
 1. Get access_token
    request for this url: http://pzhu001.sinaapp.sina.com/auth
