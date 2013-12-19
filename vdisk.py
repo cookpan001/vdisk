@@ -59,7 +59,7 @@ class Response(object):
     return a HTTPMessage object
     """
     def headers(self):
-        if hasattr(self.resopnse,"info"):
+        if hasattr(self.response,"info"):
             return self.response.info()
         elif hasattr(self.resopnse,"msg"):
             return self.resopnse.msg()
